@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>布局</title>
+    <style>
+        #left{
+            background-color: blanchedalmond;
+            width: 30%;
+            float: left;
+            height: 300px;
+            padding: 20px;
+            box-sizing: border-box;
+
+     
+        }
+        #right{
+            background-color: cadetblue;
+            width:70%;
+            margin-left: 30%;
+            height: 300px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #main1{
+            margin-top: 30px;
+
+        }
+        #left1{
+            background-color: blanchedalmond;
+            width:200px;
+            float: left;
+            height: 300px;
+            padding: 20px;
+            box-sizing: border-box;
+
+        }
+        #right1{
+            background-color: cadetblue;
+            width:100%-200px;
+            margin-left:200px;
+            height: 300px;
+            padding: 20px;
+            box-sizing: border-box;
+
+        }
+        #main2{
+            margin-top: 30px;
+        }
+        #left2{
+            background-color: blanchedalmond;
+            width: 100%-200px;
+            height: 300px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #right2{
+            background-color: cadetblue;
+            float: right;
+            width:200px;
+            height: 300px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #main3{
+            margin-top: 30px;
+        }
+        #left3{
+            background-color: blanchedalmond;
+            width: 200px;
+            height: 300px;
+            padding: 20px;
+            box-sizing: border-box;
+            float: left;
+        }
+        #right3{
+            background-color: cadetblue;
+            float: right;
+            width:200px;
+            height: 300px;
+            padding: 20px;
+            box-sizing: border-box;
+
+        }
+        #min{
+            background-color:darkgray;
+            width:100%-400px;
+            margin-left: 200px;
+            height: 300px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #main4{
+            margin-top: 30px;
+            display: flex;
+        }
+        #left4{
+            background-color: blanchedalmond;
+            flex: none;
+            width: 200px;
+            height: 300px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #min1{
+            background-color:darkgray;
+            flex: none;
+            width:200px;
+            height: 300px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        #right4{
+            background-color: cadetblue;
+            flex:1;
+            height: 300px;
+            padding: 20px;
+            box-sizing: border-box;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="left">左侧的百分之30</div>
+        <div id="right">右侧的百分之70</div>
+    </div>
+    <div id="main1">
+        <div id="left1">左侧的固定200px</div>
+        <div id="right1">右侧的随着浏览器变化</div>
+    </div>
+    <div id="main2">
+            <div id="right2">右侧的固定200px</div>
+            <div id="left2">左侧的随着浏览器变化</div>   
+    </div>
+    <div id="main3">
+            <div id="left3">左侧的固定为200px</div> 
+            <div id="right3">右侧的固定200px</div>
+            <div id="min">中间的随着浏览器变化</div>        
+    </div>
+    <div id="main4">
+            <div id="left4">左侧的固定为200px</div> 
+            <div id="min1">中间的固定为200px</div>
+            <div id="right4">右侧的随着浏览器变化</div>           
+    </div>
+
+    
+</body>

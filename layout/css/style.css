@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+#head{
+    width: 100%;
+    background-color: rgb(51, 51, 51);
+    color: aliceblue;
+    height: 50px;
+}
+#head div:nth-of-type(1){
+    float: left;
+    font-size: 17px;
+    width: 75%;
+    padding-left: 15%;
+    padding-top: 10px
+}
+#head div:nth-of-type(2) ul li{
+    list-style: none;
+    float: left;
+    font-size: 13px;
+    width: 60px;
+}
+#head div:nth-of-type(2) ul li a{
+    color: aliceblue;
+}
+#banner{
+    background-color:  rgb(102, 187, 51);
+    width: 100%;
+    height: 300px;
+    padding-left: 77%;
+    padding-top: 260px;
+}
+#banner ul li{
+    list-style: none;
+    float: left;
+    background-color:  rgb(178, 221, 153);
+    width: 20px;
+    height: 20px;
+    margin-left: 5px;
+    padding-left: 5px;
+    padding-top: 3px;
+    font-size: 10px;
+}
+#banner ul li a{
+    color: rgb(62, 145, 14);
+    text-decoration: none;
+}
+#bar{
+    border-bottom: 1px solid rgb(173, 168, 168);
+    width: 100%;
+    height:50px ;
+    padding-left: 15%;
+    padding-top: 17px;
+}
+#bar ul li{
+    list-style: none;
+    width: 80px;
+    float: left;
+    border-top: 1px solid rgb(173, 168, 168);
+    border-left: 1px solid rgb(173, 168, 168);
+    border-right: 1px solid rgb(173, 168, 168);;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 30px;
+    font-size: 14px;
+    margin-right:10px;
+    background-color: rgb(238, 238, 238);
+    padding-top: 5px;
+    padding-left: 10px
+}
+#bar ul li a{
+    text-decoration: none;
+    color:rgb(56, 56, 56);
+}
+#content{
+    width: 70%;
+    margin-left: 15%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#content div{
+    border: 1px solid  rgb(173, 168, 168);
+    height: 150px;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding-left: 50px;
+    padding-top: 50px;
+
+    
+}
+#content div:nth-of-type(1){
+    flex:30%;
+}
+#content div:nth-of-type(2){
+    flex:30%;
+}
+#content div:nth-of-type(3){
+    flex:30%;
+}
+#content div:nth-of-type(4){
+    flex:22%;
+}
+#content div:nth-of-type(5){
+    flex:22%;
+}
+#content div:nth-of-type(6){
+    flex:22%;
+}
+#content div:nth-of-type(7){
+    flex:22%;
+}
+#content div:nth-of-type(8){
+    flex:30%;
+}
+#content div:nth-of-type(9){
+    flex:30%;
+}
+#content div:nth-of-type(10){
+    flex:30%;
+}
+#bottom{
+    width: 100%;
+    height: 70px;
+    background-color: rgb(120, 120, 120);
+    margin-top: 10px;
+    color: aliceblue;
+    padding-left: 45%;
+    padding-top: 10px;
+}
+
+
