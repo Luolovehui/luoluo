@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        div{
+            width: 550px;
+            background-color: rgb(247, 214, 219);
+            margin-left: 30%;
+            position: absolute;
+          
+
+        }
+        h1{
+            background-color: bisque;
+            font-size: 20px;
+            padding-left: 20px;
+            height: 35px;
+            padding-top: 5px;
+            color: chocolate
+        }
+        li{
+            list-style-type: none;
+            float: left;
+            width: 220px;
+            height: 70px;
+            font-size: 14px;
+            background-color: mistyrose;
+            color: chocolate;
+            border: 1px solid chocolate;
+            padding-left: 10px;
+            margin-left: 10px;
+            padding-top:10px;
+        }
+        p{
+            font-size: 14px;
+            color: chocolate;
+            padding-left: 20px;
+        }
+        #dow{
+            background-color: bisque;
+            height: 20px;
+            margin-top: 20px
+        }
+        a{
+            text-decoration: none;
+            color: chocolate;
+            
+        }
+        a:hover{
+            color: brown;
+        }
+        #hobby{
+            margin-top: 10px;
+            height: 30px;
+            background-color: bisque;
+            color: chocolate;
+            border: none;
+            cursor: pointer;
+        }
+       
+       
+    </style>
+    <script>
+        function displyHobby(){
+            document.getElementById("displyHobby").innerHTML="有很多呀，爱逛街，爱吃零食，爱睡觉，爱追剧。"
+        }
+        window.onload=function(){
+            window.alert("Holle,everyone!!!");
+
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1>简历</h1>
+        <p>姓名：落落</p>
+        <p>电话：12323412341</p>
+        <p>邮箱：<a href="#">23134123@qq.com</a></p>
+        <p>学历：本科</p>
+        <p>项目经验：</p>
+        <p><ul><li>项目A:<br>项目时间：2017.1-2018.6<br>项目描述：在项目A中负责了xxxxx</li><li>项目B:<br>项目时间：2018.9-2019.4<br>项目描述：在项目B中负责了xxxxx</li></ul></p>
+        <p id="hobbyOne"><input type="button" id="hobby" value="你可以点击这里，查看我的爱好:" onclick="displyHobby()">
+           
+         </p>
+         <p id="displyHobby">
+            </p>
+        <p id="dow"></p>
+    </div>
+    
+</body>
