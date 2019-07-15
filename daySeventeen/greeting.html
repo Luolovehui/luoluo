@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="css/style_2.css" type="text/css" rel="stylesheet"runat="server"></link>
+    <script>
+        window.onload=function(){
+        var greeting=document.getElementById('greeting');
+        var oDate=new Date();
+        var hour=oDate.getHours();
+        if(hour<11)
+        {
+            greeting.innerHTML="早上好！";
+
+        }
+        else if(hour<14)
+        {
+            greeting.innerHTML="中午好！";
+        }
+        else if(hour<18)
+        {
+            greeting.innerHTML="下午好！";
+        }
+        else{
+            greeting.innerHTML="晚上好！"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div id="wrap">
+        <div id="resume"><h1>简历</h1></div>
+        <div id="main">
+            <p id="greeting"></p>
+        <div id="information">
+            <h2>基本信息</h2>
+            <p><strong>姓名</strong>  马各</p>
+            <p><strong>性别</strong>  女</p>
+            <p><strong>应聘职位</strong>  Web前端工程师</p>
+        </div>
+        <div id="contact">
+            <h2>联系方式</h2>
+            <p><strong>手机</strong>  15170768901</p>
+            <p><strong>Email</strong> &nbsp;<a href="#"> 510819493@qq.com</a></p>
+           
+        </div>
+        <div id="ability">
+            <h2>能力描述</h2>
+            <p id="technical1"><strong>技术能力</strong></p>
+            <p id="technical">熟练掌握HTML，CSS，JavaScript</p>
+            <p id="ability1"><strong>综合能力</strong></p>
+            <p>良好的沟通，主动积极，努力勤奋</p>
+        </div>
+        <div id="education">
+            <h2>教育经历</h2>
+            <p id="course1"><strong>本科</strong></p>
+            <p id="course">南大</p>
+            <p id="education1"><strong>专业</strong></p>
+            <p>软件工程</p>
+        </div>
+        <div id="project">
+            <h2>在校经历</h2>
+            <p id="bubu1"><strong>担任职务</strong></p>
+            <p id="bubu">生活委员</p>
+            <p id="project1"><strong>荣誉</strong></p>
+            <p>获得过3次奖学金，分别是一等，二等，三等。</p>
+            <p>得过社会积极分子称号</p>
+
+        </div>
+    </div>
+    </div>
+</body>

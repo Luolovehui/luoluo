@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+    <script>
+           
+            window.onload=function(){
+                var multiplication=document.getElementById("multiplication");
+                for(var i=0;i<=9;i++){
+                for(var j=0;j<=i;j++){
+                    var t=i*j;
+                    document.write(i+'*'+j+'='+t+'&nbsp;&nbsp;&nbsp;');
+                    console.log(i+'*'+j+'='+t);
+                }
+                document.write('<br>');
+                
+                }
+            }
+                
+            
+           
+           
+        </script>
+</head>
+<body> 
+    <p>九九乘法表</p>
+    <table>
+        <tr>
+            <td></td>
+        </tr>
+        <tr>
+
+        </tr>
+    </table>
+    <p id="multiplication"></p>
+   
+</body>

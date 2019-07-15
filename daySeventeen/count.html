@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>        
+    <input id="first-number" type="number" value="0" placeholder="第一个数字">
+    <input id="second-number" type="number" value="0" placeholder="第二个数字">
+    <button id="add-btn" onclick="add()">加</button>
+    <button id="minus-btn" onclick="minus()" >减</button>
+    <button id="times-btn" onclick="times()">乘</button>
+    <button id="divide-btn" onclick="divide()">除</button>
+    <p id="result">运算结果</p>
+    <script>
+         
+            function add(){    
+            var a=document.getElementById("first-number").value;
+            var b=document.getElementById("second-number").value;    
+            if(parseFloat(a).toString()=="NaN")
+            {
+                console.log('第一个数不是数字！');
+                
+            }else if(parseFloat(b).toString()=="NaN")
+            {
+                console.log('第二个数不是数字！');
+            }
+            else{
+            var c=parseInt(a)+parseInt(b);
+            document.getElementById("result").innerHTML=c;
+
+            }
+          
+        }
+        function minus(){
+            var a=document.getElementById("first-number").value;
+            var b=document.getElementById("second-number").value;
+            if(parseFloat(a).toString()=="NaN")
+            {
+                console.log('第一个数不是数字！');
+                
+            }else if(parseFloat(b).toString()=="NaN")
+            {
+                console.log('第二个数不是数字！');
+            }
+            else{
+                var c=parseInt(a)-parseInt(b);
+            document.getElementById("result").innerHTML=c;
+
+            }
+          
+          
+        }
+        function times(){
+            var a=document.getElementById("first-number").value;
+            var b=document.getElementById("second-number").value;
+            if(parseFloat(a).toString()=="NaN")
+            {
+                console.log('第一个数不是数字！');
+                
+            }else if(parseFloat(b).toString()=="NaN")
+            {
+                console.log('第二个数不是数字！');
+            }
+            else{
+                var c=parseInt(a)*parseInt(b);
+            document.getElementById("result").innerHTML=c;
+
+            }
+          
+        }
+        function divide(){
+            var a=document.getElementById("first-number").value;
+            var b=document.getElementById("second-number").value;
+            if(parseFloat(a).toString()=="NaN")
+            {
+                console.log('第一个数不是数字！');
+                
+            }else if(parseFloat(b).toString()=="NaN")
+            {
+                console.log('第二个数不是数字！');
+            }else if(Number(b)==0){
+                console.log("除数不能为0！")
+            }
+            else{
+                var c=parseInt(a)/parseInt(b);
+            document.getElementById("result").innerHTML=c;
+
+            }
+        }
+    </script>
+</body>
+</html>

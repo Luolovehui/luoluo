@@ -1,0 +1,59 @@
+#wrap{
+    width: 70%;
+    border: 1px solid rgb(252, 250, 250);
+    box-sizing: border-box;
+    margin-left: 15%;
+    display: flex;
+    margin-top: 100px;
+}
+#resume{
+    background-color: cornflowerblue;
+    color: azure;
+    width: 20%;
+    float: left;
+    height: 800px;
+    padding-left:10%;
+    padding-top: 20px;
+   
+}
+#main{
+    float:right;
+    border: 1px solid  cornflowerblue;
+    border-left: 0px;
+    padding-left: 20px;
+   
+}
+#information p{
+    float: left;
+    padding-right: 20px;
+    margin-top: 0px
+}
+#contact{
+    clear: both;
+}
+#contact p{
+    float: left;
+    padding-right: 20px;
+    margin-top: 0px
+}
+#ability{
+    clear: both;
+}
+#ability p{
+    margin-top: -10px;
+}
+#technical{
+    margin-bottom: 25px;
+}
+#education p{
+    margin-top: -10px; 
+}
+#course{
+    margin-bottom: 25px;
+}
+#project p{
+    margin-top: -10px;
+}
+#bubu{
+    margin-bottom: 25px;
+}
