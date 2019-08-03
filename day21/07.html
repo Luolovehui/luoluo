@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <style>
+           #esd{
+               background-image: url(images/01.jpg);
+               background-size: cover;
+               background-repeat: no-repeat;
+               height: 480px;
+               width: 480px;
+           }
+        </style>
+        <script>
+            window.onload=function (){
+                var esd=document.getElementById("esd");
+                var top=0;
+                var sko=-1;
+                setInterval(function(){
+                    esd.style.backgroundPosition="0 "+top+"px";
+                    top+=sko*480;
+                    if(top==-16*480||top==0){
+                        sko*=-1;
+                    }
+                },200
+
+                );
+            }
+        </script>
+
+    </head>
+    <body>
+        <div id="esd">
+        </div>
+    </body>
+</html>
